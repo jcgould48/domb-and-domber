@@ -16,8 +16,8 @@ function strAdder (newStr){
 } 
 
 function imgSource(image1, str1){
-    const findImg = document.querySelector('image1');
-    findImg.src = str;
+    const findImg = document.querySelector(image1);
+    findImg.src = str1;
 }
 
 function classEqual (element1, element2){
@@ -32,7 +32,20 @@ function tagAndId(tagName, id){
     return newElement; 
 }
 
-function twoString(colorString, idString){
-    const foundIdString = document.querySelector(idString);
-    foundIdString.style.color = colorString;
+function colorIdString(colorStr, idStr){
+    const locateIdStr = document.querySelector(idStr);
+    locateIdStr.style.color = colorStr;
 }
+
+ulAppender(strAdder('Hi!'));
+ulAppender(strAdder('My name is...'));
+ulAppender(strAdder('who?'));
+
+divAppender(imgSource('img1', 'img2'))
+
+
+
+classEqual('#thing-1', '#thing-2');
+classEqual('#thing-1', '#thing-c');
+
+colorIdString('lightGreen', '#heading')
