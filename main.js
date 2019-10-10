@@ -41,7 +41,11 @@ ulAppender(strAdder('Hi!'));
 ulAppender(strAdder('My name is...'));
 ulAppender(strAdder('who?'));
 
-divAppender(imgSource('img1', 'img2'))
+divAppender(tagAndId('img', 'img1'));
+imgSource('#img1', 'https://media.giphy.com/media/puOukoEvH4uAw/giphy.gif')
+
+divAppender(tagAndId('img', 'img2'));
+imgSource('#img2', 'https://media.giphy.com/media/1dNLLlpEUbeD8peO4e/giphy.gif')
 
 
 
